@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/014cb56c5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Emo Music</title>
+    <link rel="stylesheet" href="stylesheets\about1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="/home" style="text-decoration: none">
+        <div id="logo">
+          <img src="images\mello.svg" alt="emoji" />
+          <h1 class="title-h1">EmoMusic</h1>
+        </div>
+      </a>
+      <div class="navigation-elements">
+        <ul>
+          <li class="item"><a href="/home">Home</a></li>
+          <li class="item"><a href="/contact">Contact</a></li>
+          <li class="item"><a href="/login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="inner-container">
+        <h1><strong>About EmoMusic</strong></h1>
+        <p class="text">
+          Recent studies confirm that humans respond and react to music and it
+          has a high impact on a person’s brain activity. The currently existing
+          platforms for listening to music tend to increase manual operation by
+          searching and finding music based on their mood and interests.</p>
+          <p class = "text"> EmoMusic
+          is a Website for listening to music. This functions by detecting the
+          user’s emotion using ML algorithms and plays songs appropriate to the
+          mood. The platform is designed to facilitate its features. The UI/UX
+          of the web application is designed using HTML, CSS and JS and Node.js
+          is used as backend. The Emotion detection and recognition is achieved
+          using Deepface library and the database is created using Mongoose.
+          After the user have logged or signed in the website then user can
+          capture their own image and detect emotion then the mood is detected
+          and analysed and then using Spotify widget, songs that suit the mood
+          are played
+        </p>
+        <div class="skills">
+          <span>Website Development</span>
+          <span>Machine Learning</span>
+          <span>Spotify Widget</span>
+        </div>
+      </div>
+    </div>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>

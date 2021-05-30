@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emo Music</title>
+    <script
+      src="https://kit.fontawesome.com/014cb56c5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <nav id="navbar">
+        <div id="logo">
+          <img src="images/mello.svg" alt="Emotion Based Music Player" />
+          <h1 class="title-h1">EmoMusic</h1>
+        </div>
+        <div class="navigation-elements">
+          <ul>
+            <li class="item"><a href="/home">Home</a></li>
+            <li class="item"><a href="/about">About</a></li>
+            <li class="item"><a href="/contact">Contact</a></li>
+            <li class="item"><a href="/logout">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="video-wrap">
+        <video id="video" playsinline="true" muted autoplay></video>
+      </div>
+      <div class="buttons">
+        <div class="loading">
+          <h3>Click on CAPTURE IMAGE to capture the perfect image displaying a mood and then click on START DETECTION</h3>
+        </div>
+        <button id="snap" class="btn">Capture Image</button>
+        <!-- <input type="submit" id="btn-download" class="btn" name="detect" value="Detect Emotion" method="post"></input> -->
+        
+        <form  method="post">
+          <input id="datauri" styles="display:none" type="hidden" name="datauri" value="this is the datauri string"></input>
+          <button type="submit" id="btn-download" class="btn">Start Detection</button>
+          <div class="loading"><h3 id="loading">After you Click on Start Detection, You Will be redirected to the Music Player in few seconds,'Sit Back and Relax' </h3></div>
+      </form>
+      </div>
+      <!-- webcam video snapshot     -->
+      <div class="canvas-wrap">
+        <canvas id="canvas" width="400px" height="400"></canvas>
+      </div>
+    </div>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/home.js"></script>
+  </body>
+</html>
